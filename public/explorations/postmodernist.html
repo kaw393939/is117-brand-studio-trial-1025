@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Common Hour hero study: a controlled visual exploration for BRAND-001."
+    />
+    <title>B · Gathered pieces — Common Hour hero study</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="explorations.css" />
+    <script src="../shop.js" defer></script>
+  </head>
+  <body>
+    <a class="study-skip" href="#main">Skip to content</a>
+    <header class="study-bar study-shell">
+      <p>BRAND-001 · Hero study · Not a final identity</p>
+      <nav aria-label="Preview navigation">
+        <a href="index.html">Compare A / B</a
+        ><a href="../index.html">Main shop</a
+        ><a href="modernist.html">View A</a>
+      </nav>
+    </header>
+    <main id="main" class="study-shell">
+      <header class="study-header post-header">
+        <p class="study-brand">Common Hour</p>
+        <a href="#demo-bag">View demo bag ↗</a>
+      </header>
+      <section class="post-hero" aria-labelledby="hero-title">
+        <div class="post-copy">
+          <p class="study-label">
+            <span>B / Gathered pieces</span><span>Common Hour</span>
+          </p>
+          <h1 id="hero-title" class="study-title">
+            Good company. No occasion needed.
+          </h1>
+          <p class="study-support">
+            A white tee for coffee plans, study breaks, and time with your
+            people.
+          </p>
+          <div class="study-price">
+            <strong>$28</strong><span>USD · Fictional demo price</span>
+          </div>
+          <form id="product-form" class="study-form" novalidate>
+            <fieldset aria-describedby="size-help size-error">
+              <legend>Choose a size</legend>
+              <p id="size-help" class="study-help">
+                Demo sizes: S, M, L, and XL.
+              </p>
+              <div class="study-sizes">
+                <label class="study-size"
+                  ><input type="radio" name="size" value="S" /><span
+                    >S</span
+                  ></label
+                ><label class="study-size"
+                  ><input type="radio" name="size" value="M" /><span
+                    >M</span
+                  ></label
+                ><label class="study-size"
+                  ><input type="radio" name="size" value="L" /><span
+                    >L</span
+                  ></label
+                ><label class="study-size"
+                  ><input type="radio" name="size" value="XL" /><span
+                    >XL</span
+                  ></label
+                >
+              </div>
+              <p id="size-error" class="study-error" role="alert" hidden>
+                Choose a size before adding the shirt to your demo bag.
+              </p>
+            </fieldset>
+            <button class="study-action" type="submit">
+              Add to demo bag <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <p class="study-disclaimer">
+            Working prototype. Temporary demo bag; no order, payment, account,
+            or saved data. Shirt illustration; no fabric or fit claims.
+          </p>
+        </div>
+        <div>
+          <div class="post-product">
+            <img
+              src="../assets/white-shirt.svg"
+              alt="Plain white, unbranded short-sleeved T-shirt"
+              width="800"
+              height="880"
+              fetchpriority="high"
+            />
+            <div class="study-product-label">
+              <span>01 / White T-shirt</span><span>Unprinted</span>
+            </div>
+          </div>
+          <p class="post-ticket">
+            <span class="post-ticket-line">COMMON HOUR</span
+            ><span>WHITE T-SHIRT / 01</span
+            ><span class="post-ticket-line">WARM · PLAIN · UNHURRIED</span>
+          </p>
+        </div>
+        <div class="post-base" aria-hidden="true"></div>
+      </section>
+      <section id="demo-bag" class="study-bag" aria-labelledby="bag-title">
+        <div>
+          <p class="study-label">Working interaction · Demo only</p>
+          <h2 id="bag-title">Your demo bag (<span id="bag-count">0</span>)</h2>
+        </div>
+        <div>
+          <p
+            id="bag-status"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            Your demo bag is empty. Choose a size to try it.
+          </p>
+          <ul id="bag-items"></ul>
+          <button id="clear-bag" class="study-clear" type="button" disabled>
+            Empty demo bag
+          </button>
+          <p class="study-help">
+            The bag resets when this page reloads. There is no checkout.
+          </p>
+        </div>
+      </section>
+      <section class="study-notes" aria-labelledby="notes-title">
+        <p class="study-label">Why this direction looks this way</p>
+        <h2 id="notes-title">B / Postmodernist exploration</h2>
+        <p>
+          Original web composition informed by a viewed design reference. No
+          museum artwork is reproduced. Audience effects below are intentions,
+          not research findings.
+        </p>
+        <div class="study-notes-grid">
+          <article class="study-note">
+            <h3>01 / Angular, structured overlap</h3>
+            <p>
+              <a href="https://www.metmuseum.org/art/collection/search/486989"
+                >Ettore Sottsass, <cite>Carlton Room Divider</cite>, 1981 · The
+                Met</a
+              >. Colored horizontal and diagonal members and stacked
+              compartments become overlapping menu-like panels, an angled
+              product frame, and a triangular tab. They aim to suggest a casual
+              café noticeboard; the risk is a busier first impression.
+            </p>
+          </article>
+          <article class="study-note">
+            <h3>02 / More than added color</h3>
+            <p>
+              The reference’s tension between a textured gray plinth and colored
+              members becomes a fine patterned base beneath flat paper shapes.
+              Serif invitation, plain sans-serif controls, and a monospace
+              ticket mix visual languages. The intended effect is a familiar,
+              collected quality; the risk is that the mix feels less coherent.
+            </p>
+          </article>
+          <article class="study-note">
+            <h3>03 / An open invitation</h3>
+            <p>
+              The overlapping pieces suggest different people sharing a table,
+              while the headline and size controls remain level and readable.
+              This aims to welcome friends and a solo café visitor alike. The
+              risk is that the collage signals a scene or club more strongly
+              than the Everyperson brief intends.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

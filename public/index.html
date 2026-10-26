@@ -5,42 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="Common Hour — a white tee for coffee plans, study breaks, and time with your people. Fictional classroom storefront; no orders."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>Common Hour — Good company. No occasion needed.</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="shop.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
-      >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
-      >
-    </aside>
     <header class="site-header wrap">
       <a
         class="brand-link"
         href="index.html"
-        aria-label="Your Brand storefront home"
+        aria-label="Common Hour storefront home"
         ><img
           class="wordmark"
           src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
+          alt="Common Hour"
           width="175"
-          height="26"
+          height="30"
       /></a>
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html" aria-current="page">Shop</a>
         <a class="nav-link" href="styleguide.html">Style guide</a>
-        <a class="nav-link" href="studio.html"
-          >Studio <span aria-hidden="true">↗</span></a
-        >
       </nav>
       <a class="bag-link" href="#demo-bag" aria-label="View demo bag"
         >Demo bag <span id="bag-count" class="bag-count">0</span></a
@@ -49,35 +37,26 @@
 
     <main id="main">
       <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
-          <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
-          </div>
-          <img
-            class="shirt-image"
-            src="assets/white-shirt.svg"
-            alt="Plain white, unbranded short-sleeved T-shirt"
-            width="800"
-            height="880"
-            fetchpriority="high"
-          />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
-            ><span aria-hidden="true">↙</span>
-          </div>
-        </div>
         <div class="product-information">
           <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+            <span>Common Hour / White T-shirt</span><span>Demo only</span>
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
-          <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
-          </p>
+          <h1 id="product-title" class="brand-headline">
+            Good company. No occasion needed.
+          </h1>
+          <div class="product-intro-row">
+            <img
+              class="mobile-shirt-preview"
+              src="assets/white-shirt.svg"
+              alt="Plain white, unbranded short-sleeved T-shirt"
+              width="96"
+              height="106"
+            />
+            <p class="brand-body product-intro">
+              A white tee for coffee plans, study breaks, and time with your
+              people.
+            </p>
+          </div>
           <div class="price-row">
             <p class="price">$28 <span>USD</span></p>
             <span class="micro-label">Fictional demo price</span>
@@ -119,24 +98,53 @@
             </button>
           </form>
           <p class="demo-disclaimer">
-            A classroom interaction, using fictional product data. No order,
-            payment, or personal information is collected.
+            A fictional classroom product. No order, payment, or personal
+            information is collected.
           </p>
-          <dl class="product-facts">
-            <div>
-              <dt>Color</dt>
-              <dd>White</dd>
-            </div>
-            <div>
-              <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
-            </div>
-            <div>
-              <dt>Product claims</dt>
-              <dd>None supplied</dd>
-            </div>
-          </dl>
         </div>
+        <div class="product-visual">
+          <img
+            class="shirt-image"
+            src="assets/white-shirt.svg"
+            alt="Plain white, unbranded short-sleeved T-shirt"
+            width="800"
+            height="880"
+            fetchpriority="high"
+          />
+          <div class="image-caption">
+            <span>Common Hour / White T-shirt</span><span>Unprinted</span>
+          </div>
+        </div>
+      </section>
+      <section class="outfit-section wrap" aria-labelledby="outfit-title">
+        <div>
+          <p class="eyebrow">A few ideas, on us</p>
+          <h2 id="outfit-title">Make it your hour.</h2>
+          <p class="outfit-intro">
+            Three easy starting points for clothes you may already have.
+          </p>
+        </div>
+        <ol class="outfit-list">
+          <li>
+            <h3>01 / Coffee with friends</h3>
+            <p>
+              White tee + jeans + an open overshirt. Add your everyday shoes.
+            </p>
+          </li>
+          <li>
+            <h3>02 / A study break</h3>
+            <p>
+              White tee + relaxed trousers + a cardigan. Keep your usual layers
+              close.
+            </p>
+          </li>
+          <li>
+            <h3>03 / An open afternoon</h3>
+            <p>
+              White tee + shorts + a cap. Pick the pieces that feel like you.
+            </p>
+          </li>
+        </ol>
       </section>
 
       <section
@@ -145,7 +153,7 @@
         aria-labelledby="bag-title"
       >
         <div>
-          <p class="eyebrow">A small working interaction</p>
+          <p class="eyebrow">Here when you want to try it</p>
           <h2 id="bag-title">Your demo bag.</h2>
         </div>
         <div class="bag-details">
@@ -167,32 +175,21 @@
           </p>
         </div>
       </section>
-
-      <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
-        <div>
-          <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
-          </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer wrap">
       <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
+        Common Hour · Coaching simulation · Fictional classroom brand · Demo
+        only; no orders or checkout.
       </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
-      >
+      <nav aria-label="Project references">
+        <a href="styleguide.html">Live style guide</a
+        ><a href="explorations/index.html">Hero studies</a
+        ><a href="studio.html">Assignment overview</a
+        ><a href="https://github.com/kaw393939/is117-brand-studio-trial-1025"
+          >Trial repository ↗</a
+        >
+      </nav>
     </footer>
   </body>
 </html>
