@@ -5,7 +5,7 @@ This is a **simulated student assignment** authorized by the instructor. Learner
 ## Current stage
 
 - Feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: In progress; audience, brief and direction B agreed in the simulation; logo pending.
+- Status: Implementation and simulated browser review complete; concrete PR review/keep decision is next. Actual delivery is recorded in PR #2.
 - Scope: one branded storefront and shared live guide; preserve the size selector and temporary demo bag. No checkout.
 - Issue: https://github.com/kaw393939/is117-brand-studio-trial-1025/issues/1
 - Branch: `feat/1-brand-identity`, created before student SPEC/previews.
@@ -44,23 +44,23 @@ The primary leads the design; the secondary checks the same page. There are no i
 
 The two studies hold product, headline, supporting copy, price, sizes, and action constant. Artist works are viewed references, not product images or assets licensed for reuse.
 
-| Item                          | Evidence / decision                                                                                                                                                                                                                      |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Modernist source              | Josef Müller-Brockmann, Musica Viva, 1957, MoMA 58.1960: https://www.moma.org/collection/works/4885                                                                                                                                      |
-| Actual viewing                | Computer Use opened MoMA's artwork lightbox. Observed compact top text columns, large empty center, repeated diagonal black rules below.                                                                                                 |
-| Postmodernist source          | Ettore Sottsass, Carlton room divider, 1981, The Met 1997.460.1a–d: https://www.metmuseum.org/art/collection/search/486989                                                                                                               |
-| Actual viewing                | Computer Use viewed the Met's artwork on its public object page. Observed stacked compartments, angular/diagonal supports and contrasting colored surfaces.                                                                              |
-| Web translation               | Two scoped hero studies in public/explorations/; precise annotations accompany them                                                                                                                                                      |
-| Chosen direction              | B / Gathered pieces: learner preferred the café-like layered green frame and serif headline, but requested higher size controls and action. Choice reconfirmed after correcting a missing typography class and recapturing both studies. |
-| Logo / one-color / small-size | Not chosen yet                                                                                                                                                                                                                           |
-| Shared tokens and assets      | Not chosen yet                                                                                                                                                                                                                           |
+| Item                          | Evidence / decision                                                                                                                                                                                                                                                                                |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Modernist source              | Josef Müller-Brockmann, Musica Viva, 1957, MoMA 58.1960: https://www.moma.org/collection/works/4885                                                                                                                                                                                                |
+| Actual viewing                | Computer Use opened MoMA's artwork lightbox. Observed compact top text columns, large empty center, repeated diagonal black rules below.                                                                                                                                                           |
+| Postmodernist source          | Ettore Sottsass, Carlton room divider, 1981, The Met 1997.460.1a–d: https://www.metmuseum.org/art/collection/search/486989                                                                                                                                                                         |
+| Actual viewing                | Computer Use viewed the Met's artwork on its public object page. Observed stacked compartments, angular/diagonal supports and contrasting colored surfaces.                                                                                                                                        |
+| Web translation               | Two scoped hero studies in public/explorations/; precise annotations accompany them                                                                                                                                                                                                                |
+| Chosen direction              | B / Gathered pieces: learner preferred the café-like layered green frame and serif headline, but requested higher size controls and action. Choice reconfirmed after correcting a missing typography class and recapturing both studies.                                                           |
+| Logo / one-color / small-size | Name-only editable serif SVG, shown at 175px and 110px, plus a genuine coffee-ink one-color SVG. Simulated learner rejected the original circles as wedding rings and chose the lettering alone. See public/assets/wordmark.svg, wordmark-small.svg, wordmark-mono.svg and public/logo-study.html. |
+| Shared tokens and assets      | Cream #f4efe4, coffee ink #2b2924, forest #224b3e, apricot #f4b28d; Georgia display, Arial body, Courier New labels; public/styles.css and shared SVGs. Guide uses the actual brand-headline, brand-body and button classes.                                                                       |
 
 ## Ethical persuasion
 
-| Principle   | Actual content / mechanism                                                      | Support and limits                                                                                         |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Reciprocity | Agreed: three short free outfit ideas, visible before buying, with no signup    | Offers useful ideas first; not implemented/tested yet; no conversion claim                                 |
-| Liking      | Agreed: friendly café/study-break language and recognizable everyday situations | Uses shared interests and an approachable voice; hypotheses, not actual customer quotes or tested response |
+| Principle   | Actual content / mechanism                                                                            | Support and limits                                                                                         |
+| ----------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Reciprocity | Three short free outfit ideas in public/index.html#outfit-title, visible before buying with no signup | Offers useful ideas first; implemented; no measured conversion or audience-response claim                  |
+| Liking      | Agreed: friendly café/study-break language and recognizable everyday situations                       | Uses shared interests and an approachable voice; hypotheses, not actual customer quotes or tested response |
 
 Ordinary required size validation is usability, not by itself a persuasion mechanism. The design will make no measured conversion claim.
 
@@ -77,10 +77,18 @@ Ordinary required size validation is usability, not by itself a persuasion mecha
 
 ## Evidence
 
-| ID        | Files                                     | Issue / PR                   | Actual checks and observations                                                                         |
-| --------- | ----------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-| BRAND-001 | SPEC.md; public/explorations/ in progress | Issue #1; PR not created yet | Baseline npm ci/setup:browser/check passed: 4 server and 9 browser cases. Branded-site checks pending. |
+| ID        | Files                                                                                                                                                     | Issue / PR                                        | Actual checks and observations                                                                                                                                                                                                                                                               |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BRAND-001 | public/index.html, styles.css, styleguide.html, logo-study.html, assets/wordmark*.svg, explorations/, tests/browser/branding.spec.js, docs/trial-notes.md | Issue #1; actual delivery state recorded in PR #2 | Baseline 13 cases passed. Final npm run check passed format/lint, 4 server and 12 browser cases. Computer Use keyboard and desktop review plus 375px screenshots; mobile image-order issue fixed and regression-checked. Learner explanations/preferences are simulated, not human evidence. |
 
 ## Later
 
 No follow-up is selected. Checkout remains out of scope.
+
+## Review result
+
+- Desktop: simulated learner recognized the café-menu colors, matching lettering and visible controls.
+- Keyboard: Computer Use used Skip → S → Right to M → Tab → Enter; the actual bag count became 1. The simulated learner distinguished the focus outline from the selected size.
+- Phone: simulated learner requested the shirt before size selection. A compact mobile preview now appears above the fieldset; desktop retains the large layered frame. The revised screenshot was accepted in role-play.
+- One actual negative E2E test was discussed: a missing size must show an error and leave count 0. The simulated learner explained why showing an error alone is insufficient.
+- Source, code, screenshot evidence and dialogue limits: docs/trial-notes.md. Checks do not prove customer demand, brand fit or complete accessibility.
