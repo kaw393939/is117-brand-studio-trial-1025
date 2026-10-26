@@ -5,7 +5,7 @@ This is a **simulated student assignment** authorized by the instructor. Learner
 ## Current stage
 
 - Feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Implementation and simulated browser review complete; concrete PR review/keep decision is next. Actual delivery is recorded in PR #2.
+- Status: Approved for keep in the coaching simulation. Actual merge and publication evidence is recorded in PR #2.
 - Scope: one branded storefront and shared live guide; preserve the size selector and temporary demo bag. No checkout.
 - Issue: https://github.com/kaw393939/is117-brand-studio-trial-1025/issues/1
 - Branch: `feat/1-brand-identity`, created before student SPEC/previews.
